@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container">
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./images/10b0c5a1ca904159b3409d4bb6f74779.jpg"></div>
+      <div class="swiper-slide"><img src="./images/20220321_195657.jpg"></div>
+      <div class="swiper-slide"><img src="./images/IMG_20191023_081714-1.jpg"></div>
+      <div class="swiper-slide"><img src="./images/IMG_20191023_081927-1.jpg"></div>
+      <div class="swiper-slide"><img src="./images/IMG_20191024_175851-1.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pexels-rfstudio-3811131.jpg"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+    const swiper = new Swiper('.swiper', {
+
+      
+  loop: true,
+
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+</body>
+</html>
